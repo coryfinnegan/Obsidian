@@ -6,7 +6,6 @@
       {
         "id": "567769011c5e5ca8",
         "type": "tabs",
-        "dimension": 70.58823529411765,
         "children": [
           {
             "id": "9c42c6d9cd24f22e",
@@ -20,23 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "Gorelords the Video Game - Game Design Document"
-            }
-          }
-        ]
-      },
-      {
-        "id": "50b3f7840299e7ba",
-        "type": "tabs",
-        "dimension": 29.411764705882355,
-        "children": [
-          {
-            "id": "fe4577f3406a23ce",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
             }
           }
         ]
@@ -183,12 +165,12 @@
               "title": "Outline of Gorelords the Video Game - Game Design Document"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,10 +180,11 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9c42c6d9cd24f22e",
+  "active": "70bd39e8a7e05789",
   "lastOpenFiles": [
     "Gorelords/Gorelords the Video Game - Game Design Document.md",
     "Welcome.md",

@@ -149,13 +149,13 @@
 
 ## 6. Art and Audio
 
-**Visual Style:** Art direction, color palette, inspiration
+**Visual Style:** Characters will look like soft vinyl toys.  Backgrounds will look hand painted.  Menus will look like the back of a cardstock of the gorelords toy. 
 
-**Character Design:** Visual approach to characters
+**Character Design:** The characters will look like the soft vinyl Gorelords toys.  We have to 3d scan them or use photography as a starting point, but the idea is that we want a retro mortal kombat feel in the gameplay.
 
-**UI/UX Design:** Interface philosophy and key screens
+**UI/UX Design:** Things should feel real and handmade
 
-**Audio Design:** Music style, sound effects approach, voice acting plans
+**Audio Design:** Synthwave music, over the top sound effects, when players hit each it sounds like plastic crunching 
 
 ---
 
@@ -163,56 +163,91 @@
 
 **Engine:** Godot
 
-**Minimum Specs:** System requirements
+**Minimum Specs:** Potato
 
-**Key Technical Features:** Special rendering, physics, networking needs
+**Key Technical Features:** Getting the characters to look like plastic will be hard. 
 
-**Performance Targets:** Frame rate, resolution goals
-
+**Performance Targets:** 
+- This is a low end game
 ---
 
 ## 8. Monetization (if applicable)
 
-**Business Model:** Premium, Free-to-Play, Subscription, etc.
+**Business Model:** Pay once model. No DRM.
 
-**In-game Purchases:** What can players buy?
+**In-game Purchases:** Nothing, everything is unlockable in the game.
 
-**Ethical Considerations:** How to avoid predatory practices
+**Ethical Considerations:** The spirit of the 90s is alive. 
 
 ---
 
 ## 9. Development Timeline
+AI generated so take with a grain of salt: 
+### Phase 1: Foundation (Months 1-2)
 
-**Milestones:** Major development phases
+**Goals:** Learn Godot, prove core tech, establish asset pipeline
 
-**Prototype Phase:** What needs to be proven?
+- Weeks 1-2: Godot fundamentals — node/scene system, 2D physics, input handling, project structure
+- Weeks 3-4: Basic character controller — movement, jumping, platform collision using CharacterBody2D
+- Weeks 5-6: Combat prototype — hitboxes/hurtboxes with Area2D, knockback physics, health system, life stocks, death and respawn
+- Weeks 7-8: Asset pipeline — photograph one toy, process it, get the digitized sprite look working in-engine, test animations
 
-**Alpha/Beta Goals:** Feature completion targets
+**Milestone:** One character with placeholder moveset fighting a clone on a flat test stage. Plays correctly, looks rough.
 
-**Launch Date:** Estimated release
+---
+
+### Phase 2: Netcode & Core Systems (Months 3-5)
+
+**Goals:** Get multiplayer working early, nail the combat feel
+
+- Weeks 9-12: Implement Godot's multiplayer API for 2-4 players, test locally and over network, identify latency issues
+- Weeks 13-16: Refine combat — input buffering, hitstun, knockback scaling, frame data per attack, state machines for character actions
+- Weeks 17-20: Build first real arena with platforms, death pits, spawn points
+
+**Milestone:** Two players can fight online with one character on one arena. Combat feels good.
+
+---
+
+### Phase 3: Content Build (Months 6-8)
+
+**Goals:** Expand roster, build arenas, establish visual identity
+
+- Weeks 21-24: Characters 2-4 — photograph toys, implement unique movesets, balance pass
+- Weeks 25-28: Build 3-4 arenas with hand-painted backgrounds, varying platform layouts
+- Weeks 29-32: UI system — main menu (toy box aesthetic), character select, health bars, life stocks, win screen
+
+**Milestone:** 4 playable characters, 4 arenas, full match flow from menu to victory. Playable alpha.
+
+---
+
+### Phase 4: Polish & Playtesting (Months 9-10)
+
+**Goals:** Make it feel like a finished product
+
+- Weeks 33-36: Audio pass — synthwave tracks, plastic crunch sound effects, UI sounds
+- Weeks 37-40: Visual polish — particle effects for hits, screen shake, death animations, unlockable character variants
+- Ongoing: Playtest with friends, gather feedback, balance characters, fix netcode edge cases
+
+**Milestone:** Beta build ready for external testing.
+
+---
+
+### Phase 5: Launch Prep (Months 11-12)
+
+**Goals:** Ship it
+
+- Weeks 41-44: Bug fixing, performance optimization, Steam page setup, trailer, marketing materials
+- Weeks 45-48: Final testing, launch build, release
+
+**Milestone:** PC launch on Steam (and itch.io if desired).
 
 ---
 
 ## 10. Team and Resources
 
-**Team Structure:** Roles needed
+**Team Structure:** 
+- Developer - Cory Finnegan
+- Art - Zach Taylor
 
-**Budget:** Development costs (if applicable)
-
-**External Resources:** Middleware, assets, contractors
-
----
-
-## 11. Competitive Analysis
-
-**Similar Games:** What games are comparable?
-
-**Market Positioning:** How does this game differentiate itself?
-
-**Lessons Learned:** What can you learn from competitors?
-
----
-
-
-
----
+**Budget:** 
+- Just our time 
