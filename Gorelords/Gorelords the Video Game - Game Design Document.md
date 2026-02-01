@@ -181,65 +181,73 @@
 
 ---
 
-## 9. Development Timeline
-AI generated so take with a grain of salt: 
+## ## 9. Development Timeline
+
 ### Phase 1: Foundation (Months 1-2)
 
-**Goals:** Learn Godot, prove core tech, establish asset pipeline
+**Goals:** Set up project, prove core tech, establish asset pipeline
 
-- Weeks 1-2: Godot fundamentals — node/scene system, 2D physics, input handling, project structure
-- Weeks 3-4: Basic character controller — movement, jumping, platform collision using CharacterBody2D
-- Weeks 5-6: Combat prototype — hitboxes/hurtboxes with Area2D, knockback physics, health system, life stocks, death and respawn
-- Weeks 7-8: Asset pipeline — photograph one toy, process it, get the digitized sprite look working in-engine, test animations
+- Weeks 1-2: Project setup — MonoGame + Extended, folder structure, basic game loop, input handling
+- Weeks 3-4: Character controller — movement, variable jump heights, gravity, platform collision
+- Weeks 5-6: Combat foundation — hitbox/hurtbox system, basic attacks, health, knockback physics, life stocks
+- Weeks 7-8: Asset pipeline — photograph first toy, process sprites, get the digitized look working, basic animation system
 
-**Milestone:** One character with placeholder moveset fighting a clone on a flat test stage. Plays correctly, looks rough.
+**Milestone:** One character with placeholder moveset fighting a clone on a flat test stage.
 
 ---
 
-### Phase 2: Netcode & Core Systems (Months 3-5)
+### Phase 2: Netcode & Combat Systems (Months 3-5)
 
-**Goals:** Get multiplayer working early, nail the combat feel
+**Goals:** Multiplayer functional, combat feels right
 
-- Weeks 9-12: Implement Godot's multiplayer API for 2-4 players, test locally and over network, identify latency issues
-- Weeks 13-16: Refine combat — input buffering, hitstun, knockback scaling, frame data per attack, state machines for character actions
-- Weeks 17-20: Build first real arena with platforms, death pits, spawn points
+- Weeks 9-12: Netcode implementation with LiteNetLib (or your preferred library) — host/join, sync player positions, handle latency
+- Weeks 13-16: Character state machine — idle, walk, jump, attack startup/active/recovery, hitstun, knockback, death states
+- Weeks 17-20: Combat polish — input buffering, knockback scaling, frame data, hit confirmation feedback
 
-**Milestone:** Two players can fight online with one character on one arena. Combat feels good.
+**Milestone:** Two players fighting online, one character, combat feels good.
 
 ---
 
 ### Phase 3: Content Build (Months 6-8)
 
-**Goals:** Expand roster, build arenas, establish visual identity
+**Goals:** Roster, arenas, full match flow
 
 - Weeks 21-24: Characters 2-4 — photograph toys, implement unique movesets, balance pass
-- Weeks 25-28: Build 3-4 arenas with hand-painted backgrounds, varying platform layouts
-- Weeks 29-32: UI system — main menu (toy box aesthetic), character select, health bars, life stocks, win screen
+- Weeks 25-28: Arenas — 4 hand-painted backgrounds, Tiled for platform layouts, death pits, spawn points
+- Weeks 29-32: UI — main menu, character select, health bars, life stocks, win/lose screens, toy box aesthetic
 
-**Milestone:** 4 playable characters, 4 arenas, full match flow from menu to victory. Playable alpha.
+**Milestone:** 4 characters, 4 arenas, playable from menu to match end. Alpha build.
 
 ---
 
 ### Phase 4: Polish & Playtesting (Months 9-10)
 
-**Goals:** Make it feel like a finished product
+**Goals:** Feels finished, plays well
 
-- Weeks 33-36: Audio pass — synthwave tracks, plastic crunch sound effects, UI sounds
-- Weeks 37-40: Visual polish — particle effects for hits, screen shake, death animations, unlockable character variants
-- Ongoing: Playtest with friends, gather feedback, balance characters, fix netcode edge cases
+- Weeks 33-36: Audio — synthwave music, plastic crunch hits, UI sounds, death effects
+- Weeks 37-40: Visual polish — hit particles, screen shake, knockback trails, death animations
+- Ongoing: Playtesting with friends, balance tuning, netcode stress testing
 
-**Milestone:** Beta build ready for external testing.
+**Milestone:** Beta build ready for outside eyes.
 
 ---
 
 ### Phase 5: Launch Prep (Months 11-12)
 
-**Goals:** Ship it
+**Goals:** Ship on PC
 
-- Weeks 41-44: Bug fixing, performance optimization, Steam page setup, trailer, marketing materials
-- Weeks 45-48: Final testing, launch build, release
+- Weeks 41-44: Bug fixes, optimization, Steam page, trailer, store assets
+- Weeks 45-48: Final QA, launch build, release
 
-**Milestone:** PC launch on Steam (and itch.io if desired).
+**Milestone:** PC launch.
+
+---
+
+### Post-Launch
+
+- Patch based on player feedback
+- Expand roster (8 more characters) as updates or DLC
+- Console submissions once PC is stable
 
 ---
 
